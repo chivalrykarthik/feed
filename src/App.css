@@ -32,7 +32,6 @@
   min-height: 50px;
   border: 1px solid grey;
   border-radius: 5px;
-  padding:5px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -40,9 +39,12 @@
   gap:5px;
 }
 
+.item a{
+  padding:0 0 0 5px;
+}
 
 .item h6{
-  padding:0 5px 0 0;
+  padding:0 0 0 5px;
   display: flex;
   position: relative;
   margin: 0;
