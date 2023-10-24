@@ -1,5 +1,3 @@
-
-
 export const SUB_R = [
     'ArtificialInteligence',
     'business',
@@ -10,12 +8,9 @@ export const SUB_R = [
     'Economics',
     'finance',
     'gadgets',
-    'google',
     'googlecloud',
     'hacking',
     'hackthedeveloper',
-    'IndianStockMarket',
-    'IndiaTax',
     'InternetIsBeautiful',
     'javascript',
     'learnjavascript',
@@ -28,7 +23,9 @@ export const SUB_R = [
     'technews',
     'technology',
     'todayilearned',
-    'worldnews'
+    'worldnews',
+    'WebdevTutorials',
+    'remotejs'
 ]
 
 export const BASE_URL = `https://www.reddit.com/r/`;
