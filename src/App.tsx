@@ -9,7 +9,7 @@ function App() {
       const res = await axios.get('https://www.reddit.com/r/technology/hot.json');
       console.log(res.data)
     })()
-  },[])
+  },[]);
 
   return (
     <>
