@@ -25,7 +25,8 @@ export const SUB_R = [
     'todayilearned',
     'worldnews',
     'WebdevTutorials',
-    'remotejs'
+    'remotejs',
+    'science'
 ]
 
 export const BASE_URL = `https://www.reddit.com/r/`;
