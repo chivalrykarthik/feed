@@ -24,7 +24,7 @@ export const SUB_R = [
     'technology',
     'todayilearned',
     'worldnews',
-    'WebdevTutorials',
+    // 'WebdevTutorials',
     //'remotejs',
     'science'
 ]
