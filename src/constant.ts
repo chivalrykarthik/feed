@@ -2,7 +2,7 @@ export const SUB_R = [
     'ArtificialInteligence',
     'business',
     'ChatGPT',
-    'coding',
+    //'coding',
     'coolgithubprojects',
     'developersIndia',
     'Economics',
@@ -19,13 +19,13 @@ export const SUB_R = [
     'mongodb',
     'node',
     'reactjs',
-    'Python',
+    //'Python',
     'technews',
     'technology',
     'todayilearned',
     'worldnews',
     'WebdevTutorials',
-    'remotejs',
+    //'remotejs',
     'science'
 ]
 
