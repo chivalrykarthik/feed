@@ -6,7 +6,6 @@ export const EXCLUDE=['ArtificialInteligence',
 'mongodb',
 'node',
 'reactjs',
-'googlecloud',
 'Frontend',
 'developersIndia'
 ];
