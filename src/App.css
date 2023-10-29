@@ -87,3 +87,11 @@
     letter-spacing: 2px;
     font-weight:bold;
 }
+
+.toggle{
+  padding: 2px 0 0 14px;
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
