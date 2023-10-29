@@ -7,8 +7,10 @@ export const EXCLUDE=['ArtificialInteligence',
 'node',
 'reactjs',
 'Frontend',
-'developersIndia'
+'developersIndia',
+'javascript'
 ];
+
 export const SUB_R = [
     'ArtificialInteligence',
     'ChatGPT',
@@ -35,7 +37,8 @@ export const SUB_R = [
     // 'WebdevTutorials',
     //'remotejs',
     'science',
-    'Frontend'
+    'Frontend',
+    'javascript'
 ]
 
 export const BASE_URL = `https://www.reddit.com/r/`;

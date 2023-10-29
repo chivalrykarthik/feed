@@ -71,3 +71,19 @@
   font-style: italic;
   box-shadow: 0px 1px grey;
 }
+
+.itemInfo{
+  display: flex;
+  flex-direction: column;
+}
+
+.itemInfo span{
+    background: lightgrey;
+    width: fit-content;
+    margin: 0 0 3px 5px;
+    padding: 0 5px 0 5px;
+    font-size: 9px;
+    border-radius: 14px;
+    letter-spacing: 2px;
+    font-weight:bold;
+}
