@@ -49,3 +49,25 @@
   position: relative;
   margin: 0;
 }
+
+.itemHeading{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 5px;
+}
+
+.itemHeading span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7px;
+  font-weight: bold;
+  background: lightblue;
+  border-radius: 5px;
+  padding: 1px 5px 1px 5px;
+  letter-spacing: 2px;
+  font-style: italic;
+  box-shadow: 0px 1px grey;
+}

@@ -1,6 +1,17 @@
+export const EXCLUDE=['ArtificialInteligence',
+'ChatGPT',
+'hacking',
+'learnmachinelearning',
+'MachineLearning',
+'mongodb',
+'node',
+'reactjs',
+'googlecloud',
+'Frontend',
+'developersIndia'
+];
 export const SUB_R = [
     'ArtificialInteligence',
-    'business',
     'ChatGPT',
     //'coding',
     'coolgithubprojects',
@@ -10,10 +21,8 @@ export const SUB_R = [
     'gadgets',
     'googlecloud',
     'hacking',
-    'hackthedeveloper',
     'InternetIsBeautiful',
-    'javascript',
-    'learnjavascript',
+    'DevTo',
     'learnmachinelearning',
     'MachineLearning',
     'mongodb',
@@ -26,7 +35,8 @@ export const SUB_R = [
     'worldnews',
     // 'WebdevTutorials',
     //'remotejs',
-    'science'
+    'science',
+    'Frontend'
 ]
 
 export const BASE_URL = `https://www.reddit.com/r/`;
