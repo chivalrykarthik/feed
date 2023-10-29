@@ -3,7 +3,7 @@ import { EXCLUDE } from '../constant';
 import { calculateTimeDifference } from '../util';
 const isExternal = (url:string) =>!url.includes('https://www.reddit.com')
 
-const Item:React.FC<any>=({title,url,subreddit,score,created})=>{
+const Item:React.FC<any>=({title,url,subreddit,created})=>{
     const {diff, period} = calculateTimeDifference(created);
     if((period === 'days' && diff > 3)){
         return null;

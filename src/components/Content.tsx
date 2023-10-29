@@ -10,12 +10,11 @@ const Content:React.FC<any> = ({contents})=>{
         <div className='content'>
             {
                 results.map((item:any)=>{
-                        const {data:{title,url,subreddit,score,created_utc}} = item;
+                        const {data:{title,url,subreddit,created_utc}} = item;
                         return <Item 
                                     title={title} 
                                     url = {url} 
                                     subreddit={subreddit}
-                                    score= {score} 
                                     created={created_utc}
                                 />
                     })
