@@ -1,14 +1,11 @@
 export const EXCLUDE=['ArtificialInteligence',
 'ChatGPT',
-'hacking',
 'learnmachinelearning',
 'MachineLearning',
 'mongodb',
 'node',
-'reactjs',
 'Frontend',
-'developersIndia',
-'javascript'
+'developersIndia'
 ];
 
 export const SUB_R = [
