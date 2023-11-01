@@ -8,6 +8,15 @@ export const EXCLUDE=['ArtificialInteligence',
 'developersIndia'
 ];
 
+export const TABS = {
+    "ALL":[],
+    "TECH":['technews','technology',"gadgets",'ChatGPT','developersIndia'],
+    "BUSINESS":["Economics","finance"],
+    "NEWS":["worldnews"],
+    "DEV":['DevTo','javascript','Frontend','mongodb','node','reactjs','learnmachinelearning','MachineLearning','ArtificialInteligence'],
+    "INTERESTING":['InternetIsBeautiful','coolgithubprojects','todayilearned']
+}
+
 export const SUB_R = [
     'technews',
     'technology',

@@ -3,10 +3,15 @@ import axios from 'axios';
 import Layout from './components/Layout'
 import Content from './components/Content';
 import {  SUB_R,BASE_URL,FEED_TYPE } from './constant';
+import Toggle from './components/Toggle'
+import { SelectedTab } from './types';
 import './App.css'
 
 function App() {
   const [content,setContent] = useState([])
+  const [showInternal,setInternal] = useState(true);
+  const [selectedTab, setSelectedTab] = useState<SelectedTab>('ALL');
+
   useEffect(()=>{
     (async()=>{
       try{
@@ -27,8 +32,9 @@ function App() {
 
   return (
     <>
-      <Layout>
-        <Content contents={content} />
+      <Layout setSelectedTab = {setSelectedTab} selectedTab = {selectedTab}>
+        <Toggle show = {showInternal} setShow={setInternal} />
+        <Content contents={content} showInternal={showInternal} selectedTab = {selectedTab} />
       </Layout>
     </>
   )

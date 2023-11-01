@@ -1,20 +1,27 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Item from './Item';
 import { processResults } from '../util';
-import Toggle from './Toggle'
+import { TABS } from '../constant';
+import { SelectedTab } from '../types';
 
-const Content:React.FC<any> = ({contents})=>{
+interface IContentProps{
+    contents:any;
+    showInternal:boolean;
+    selectedTab: SelectedTab;
+}
+
+const Content:React.FC<IContentProps> = ({contents,showInternal, selectedTab})=>{
     const results:any[] = processResults(contents);
-    const [showInternal,setInternal] = useState(true);
+    
     return(
         <>
-        <div className="toggle">
-            <Toggle show = {showInternal} setShow={setInternal} />
-        </div>
+        
+        
         <div className='content'>
             {
                 results.map((item:any)=>{
                         const {data:{title,url,subreddit,created_utc}} = item;
+                        if(selectedTab !== 'ALL' && !TABS[selectedTab].includes(subreddit)) return null;
                         return <Item 
                                     title={title} 
                                     url = {url} 
