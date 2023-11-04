@@ -115,3 +115,20 @@
   border-bottom: none;
   font-style: normal;
 }
+
+.loaderOverlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  min-height: 100%;
+  position: fixed;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 100;
+  opacity: 0.5;
+} 
+
+.loaderMsg{
+  color:white;
+}
