@@ -43,3 +43,8 @@ export const SUB_R = [
 export const BASE_URL = `https://www.reddit.com/r/`;
 
 export const FEED_TYPE = '/hot.json'
+
+export const TOOL_HEADING = {
+    "INTERNAL":"Show Internal",
+    "SORT":"Sort by date"
+}

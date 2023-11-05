@@ -132,3 +132,10 @@
 .loaderMsg{
   color:white;
 }
+
+.tools{
+  display: flex;
+  font-size: 11px;
+  align-items: center;
+  gap: 15px;
+}

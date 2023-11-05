@@ -1,15 +1,15 @@
 import React from 'react';
 
-const Toggle:React.FC<any>=({show,setShow})=>{
+const Tool:React.FC<any>=({text,show,setShow})=>{
         const handleClick = ()=>setShow(!show);
         return(
             <>
                 <div className="toggle">
-                    <span>Show Internal:<button onClick = {handleClick}>{show ? 'On':'Off'}</button></span>
+                    <span>{text}:<button onClick = {handleClick}>{show ? 'On':'Off'}</button></span>
                 </div>
             </>
         )
 
 }
 
-export default Toggle;
+export default Tool;

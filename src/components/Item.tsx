@@ -1,4 +1,5 @@
 import React from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import { EXCLUDE } from '../constant';
 import { calculateTimeDifference } from '../util';
 const isExternal = (url:string) =>!url.includes('https://www.reddit.com')
@@ -12,7 +13,7 @@ const Item:React.FC<any>=({title,url,subreddit,created, showInternal})=>{
     return(
         <>
         {EXCLUDE.includes(subreddit) || isExternal(url) ? (<div className="item">
-            <div className="itemHeading">
+            <div className="itemHeading" key = {uuidv4()}>
                 <h6>{subreddit.toUpperCase()}</h6>
                 {!isExternal(url) && <span>Internal</span>} 
             </div>
