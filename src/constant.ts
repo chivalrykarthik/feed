@@ -14,7 +14,8 @@ export const TABS = {
     "BUSINESS":["Economics","finance"],
     "NEWS":["worldnews"],
     "DEV":['DevTo','javascript','Frontend','mongodb','node','reactjs','learnmachinelearning','MachineLearning','ArtificialInteligence'],
-    "INTERESTING":['InternetIsBeautiful','coolgithubprojects','todayilearned']
+    "INTERESTING":['InternetIsBeautiful','coolgithubprojects'],
+    "TODAYILEARNED":["todayilearned"]
 }
 
 export const SUB_R = [
