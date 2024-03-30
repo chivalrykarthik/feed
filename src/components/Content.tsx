@@ -4,6 +4,7 @@ import { processResults } from '../util';
 import { SHOW_TOP_10, TABS } from '../constant';
 import useSort from '../hooks/useSort';
 import { SelectedTab } from '../types';
+import { EXCLUDE } from '../constant';
 
 interface IContentProps{
     contents:any;
@@ -12,6 +13,8 @@ interface IContentProps{
     sortByDate:boolean;
     showTop10:boolean;
 }
+
+const isExternal = (url:string) =>!url.includes('https://www.reddit.com')
 
 const Content:React.FC<IContentProps> = ({contents,showInternal, selectedTab,sortByDate, showTop10})=>{
     const [results] = processResults(contents);
@@ -27,13 +30,21 @@ const Content:React.FC<IContentProps> = ({contents,showInternal, selectedTab,sor
                         if(!item?.data) return null;
                         
                         const {data} = item;
-                        const {subreddit} = data;
-                        subredditCount[subreddit] = (subredditCount[subreddit] || 0) + 1;
+                        const {subreddit, url} = data;
+                        const external = isExternal(url);
+                        subredditCount[subreddit] = (subredditCount[subreddit] || 0);
+                        
                         if(selectedTab !== 'ALL' && !TABS[selectedTab].includes(subreddit)) return null;
+                        
                         if(showTop10 && subredditCount[subreddit] > SHOW_TOP_10) return null;
+
+                        if(!EXCLUDE.includes(subreddit) && !external) return null;
+
+                        subredditCount[subreddit] = (subredditCount[subreddit] || 0) + 1;
                         return <Item 
                                     data = {data}
                                     showInternal={showInternal}
+                                    external ={external}
                                 />
                     })
                 

@@ -51,7 +51,7 @@ export const TOOL_HEADING = {
     "SHOW_TOP_10":"Show Top 10",
 }
 
-export const SHOW_TOP_10 = 10;
+export const SHOW_TOP_10 = 9;
 
 
 export const FUNCTION_WORDS =  [
