@@ -12,6 +12,7 @@ function App() {
   const [showInternal,setInternal] = useState(true);
   const [selectedTab, setSelectedTab] = useState<SelectedTab>('ALL');
   const [sortByDate, setSortByDate]= useState(false);
+  const [showTop10, setShowTop10]= useState(true);
   const {content,isLoading} = useFetch();
 
  
@@ -23,8 +24,15 @@ function App() {
         <div className ="tools">
           <Tool show = {showInternal} setShow={setInternal} text = {TOOL_HEADING.INTERNAL}/>
           <Tool show = {sortByDate} setShow={setSortByDate} text = {TOOL_HEADING.SORT}/>
+          <Tool show = {showTop10} setShow={setShowTop10} text = {TOOL_HEADING.SHOW_TOP_10}/>
         </div>
-        <Content contents={content} showInternal={showInternal} selectedTab = {selectedTab} sortByDate = {sortByDate} />
+        <Content 
+          contents={content} 
+          showInternal={showInternal} 
+          selectedTab = {selectedTab} 
+          sortByDate = {sortByDate} 
+          showTop10 = {showTop10} 
+        />
       </Layout>
     </>
   )

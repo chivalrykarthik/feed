@@ -57,7 +57,7 @@
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  gap: 5px;
+  gap: 9px;
 }
 
 .itemHeading span{
@@ -76,6 +76,7 @@
 .itemInfo{
   display: flex;
   flex-direction: column;
+  gap:5px;
 }
 
 .itemInfo span{
@@ -142,3 +143,8 @@
   align-items: center;
   gap: 15px;
 }
+
+.item-tags{
+  display: flex;
+  gap: 5px;
+} 
