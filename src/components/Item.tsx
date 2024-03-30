@@ -23,8 +23,6 @@ const Item:React.FC<any>=({data, showInternal})=>{
                 <a href = {url} target='__blank'>{title}</a>
                 <div className='item-tags'>
                     <span>{`${diff} ${period}`}</span>
-                    <span>{`Up: ${ups}`}</span>
-                    <span>{`Down: ${downs}`}</span>
                     <span>{`Score: ${score}`}</span>
                 </div>
             </div>
