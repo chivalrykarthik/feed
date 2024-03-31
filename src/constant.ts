@@ -8,6 +8,9 @@ export const EXCLUDE=['ArtificialInteligence',
 'developersIndia'
 ];
 
+export const TAB_DISPALY:Record<string,string> = {
+    "TODAYILEARNED":"TIL"
+}
 export const TABS = {
     "ALL":[],
     "TECH":['technews','technology',"gadgets",'ChatGPT','developersIndia'],

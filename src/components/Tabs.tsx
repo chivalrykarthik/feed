@@ -1,10 +1,14 @@
 import React from 'react';
-import { TABS } from '../constant';
+import { TABS,TAB_DISPALY } from '../constant';
 
-
-const Item:React.FC<any> = ({tab,setSelectedTab,selectedTab})=>{
+interface ItemProps {
+    tab:string;
+    setSelectedTab:(tab:string)=>void;
+    selectedTab:string;
+}
+const Item:React.FC<ItemProps> = ({tab,setSelectedTab,selectedTab})=>{
     const handleSelect = ()=>setSelectedTab(tab);
-    return <div className={`tabItem ${selectedTab===tab ? 'active':''}`} onClick = {handleSelect}>{tab}</div>
+    return <div className={`tabItem ${selectedTab===tab ? 'active':''}`} onClick = {handleSelect}>{TAB_DISPALY?.[tab] || tab}</div>
 }
 
 const Tabs:React.FC<any> = ({setSelectedTab,selectedTab})=>{
