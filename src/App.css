@@ -43,6 +43,11 @@
 .item a{
   padding:0 5px 0 5px;
   letter-spacing: normal;
+  color: #000080 !important;
+}
+
+.item a:hover{
+  color: #3366cc !important;
 }
 
 .item h6{
