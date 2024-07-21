@@ -22,7 +22,7 @@ const Item:React.FC<any>=({data, showInternal,external})=>{
                 <a href = {url} target='__blank'>{title}</a>
                 <div className='item-tags'>
                     <span>{`${diff} ${period}`}</span>
-                    <span>{`Score: ${score}`}</span>
+                    <span>{`Upvote: ${score}`}</span>
                 </div>
             </div>
             </div>
