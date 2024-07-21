@@ -9,8 +9,8 @@ import { SelectedTab } from './types';
 import './App.css'
 
 function App() {
-  const [showInternal,setInternal] = useState(true);
-  const [selectedTab, setSelectedTab] = useState<SelectedTab>('ALL');
+  const [showInternal,setInternal] = useState(false);
+  const [selectedTab, setSelectedTab] = useState<SelectedTab>('TECH');
   const [sortByDate, setSortByDate]= useState(false);
   const [showTop10, setShowTop10]= useState(true);
   const {content,isLoading} = useFetch();
