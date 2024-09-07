@@ -3,7 +3,7 @@ import { useEffect } from "react";
 const useScrollProgress = ()=>{
 
     function updateProgressBar() {
-        const progressBar = document.querySelector('.progress-bar');
+        const progressBar:any = document.querySelector('.progress-bar');
         if(progressBar){
             const totalHeight = document.body.scrollHeight - window.innerHeight;
             const progress = (window.pageYOffset / totalHeight) * 100;
