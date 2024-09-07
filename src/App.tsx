@@ -7,6 +7,7 @@ import Loader from './components/Loader';
 import useFetch from './hooks/useFetch';
 import { SelectedTab } from './types';
 import './App.css'
+import LoadingScrollProgress from './components/LoadingScrollProgress';
 
 function App() {
   const [showInternal,setInternal] = useState(false);
@@ -20,6 +21,7 @@ function App() {
   return (
     <>
       {!!isLoading && <Loader />}
+      <LoadingScrollProgress />
       <Layout setSelectedTab = {setSelectedTab} selectedTab = {selectedTab}>
         <div className ="tools">
           <Tool show = {showInternal} setShow={setInternal} text = {TOOL_HEADING.INTERNAL}/>
