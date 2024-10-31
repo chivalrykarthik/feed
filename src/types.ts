@@ -1,1 +1,1 @@
-export type SelectedTab = 'TECH' | 'BUSINESS' | 'ALL' | 'NEWS' | 'DEV' | 'INTERESTING';
+export type SelectedTab = 'TECH' | 'BUSINESS' | 'ALL' | 'NEWS' | 'DEV' | 'INTERESTING' | 'Gadgets';

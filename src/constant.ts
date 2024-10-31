@@ -12,7 +12,8 @@ export const TAB_DISPALY:Record<string,string> = {
 }
 export const TABS = {
     "ALL":[],
-    "TECH":['technews','technology',"gadgets"],
+    "TECH":['technews','technology'],
+    "Gadgets":"gadgets",
     "BUSINESS":["Economics","finance"],
     "NEWS":["worldnews"],
     "DEV":['DevTo','javascript','Frontend','mongodb','node','reactjs','learnmachinelearning','MachineLearning','ArtificialInteligence','developersIndia'],
