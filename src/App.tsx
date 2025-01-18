@@ -14,13 +14,16 @@ function App() {
   const [selectedTab, setSelectedTab] = useState<SelectedTab>('TECH');
   const [sortByDate, setSortByDate]= useState(false);
   const [showTop10, setShowTop10]= useState(true);
-  const {content,isLoading} = useFetch();
-
- 
+  const [show, setShow] = useState(false);
+  const {content,isLoading} = useFetch(show);
+  const handleClick = ()=>{
+    setShow(true);
+  }
 
   return (
     <>
       {!!isLoading && <Loader />}
+      {show ? <>
       <LoadingScrollProgress />
       <Layout setSelectedTab = {setSelectedTab} selectedTab = {selectedTab}>
         <div className ="tools">
@@ -36,6 +39,9 @@ function App() {
           showTop10 = {showTop10} 
         />
       </Layout>
+      </>:
+      <button type="button" onClick={handleClick}></button>
+}
     </>
   )
 }

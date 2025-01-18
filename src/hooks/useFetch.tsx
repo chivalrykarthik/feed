@@ -3,10 +3,11 @@ import axios from 'axios';
 import  {  SUB_R,BASE_URL,FEED_TYPE } from '../constant';
 
 
-const useFetch = ()=>{
+const useFetch = (show: boolean)=>{
     const [content,setContent] = useState([]);
-    const [isLoading,setLoading] = useState(true);
+    const [isLoading,setLoading] = useState(false);
     useEffect(()=>{
+      if(!show) return;
         (async()=>{
           try{
           const requests = SUB_R.map((sub:string)=>{
@@ -25,7 +26,7 @@ const useFetch = ()=>{
             alert(e.message);
           }
         })()
-      },[]);
+      },[show]);
 
       return {
         content,
