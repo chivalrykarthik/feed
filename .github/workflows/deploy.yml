@@ -41,7 +41,7 @@ jobs:
         run: npm run build
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          artifact-dir: dist
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+          folder: dist
