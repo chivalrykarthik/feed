@@ -44,7 +44,7 @@ function App() {
         />
       </Layout>
       </>:
-      <button type="button" onClick={handleClick}></button>
+      <button type="button" onClick={handleClick}>Click</button>
 }
     </>
   )
