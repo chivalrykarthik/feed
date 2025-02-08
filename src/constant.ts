@@ -10,7 +10,7 @@ export const EXCLUDE=['ArtificialInteligence',
 export const TAB_DISPALY:Record<string,string> = {
     "TODAYILEARNED":"TIL"
 }
-export const TABS = {
+export const TABS:any = {
     "ALL":[],
     "TECH":['technews','technology'],
     "Gadgets":"gadgets",
