@@ -11,7 +11,7 @@ export const TAB_DISPALY:Record<string,string> = {
     "TODAYILEARNED":"TIL"
 }
 export const TABS:any = {
-    "ALL":[],
+    // "ALL":[],
     "TECH":['technews','technology'],
     "Gadgets":"gadgets",
     "BUSINESS":["Economics","finance"],
