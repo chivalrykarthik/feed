@@ -14,7 +14,7 @@ function App() {
   const [selectedTab, setSelectedTab] = useState<SelectedTab>('TECH');
   const [sortByDate, setSortByDate]= useState(false);
   const [showTop10, setShowTop10]= useState(true);
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
   const [cnt, setCnt] = useState(0);
   const {content,isLoading} = useFetch(show, selectedTab);
   const handleClick = ()=>{
