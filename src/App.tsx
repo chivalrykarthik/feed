@@ -20,7 +20,7 @@ function App() {
   const handleClick = ()=>{
     const newCnt = cnt+1;
     setCnt(newCnt);
-    if(newCnt > 5)
+    if(newCnt > 12)
       setShow(true);
   }
 
